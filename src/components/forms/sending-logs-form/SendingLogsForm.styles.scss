@@ -1,0 +1,60 @@
+@use '../../../styles/_variables.scss' as v;
+
+.main__sending-logs-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-input-comp {
+        margin-bottom: calc(v.$primary-margin-top-bottom / 3);
+
+        .main__sending-logs-form-file-input-label {
+            display: block;
+
+            position: relative;
+
+            padding: 0 calc(v.$primary-padding / 1.5);
+
+            border: v.$primary-border-size v.$black-color solid;
+            border-radius: v.$primary-border-radius;
+
+            transition: .2s linear;
+
+            &:hover {
+                cursor: pointer;
+                color: v.$white-color;
+                background-color: v.$blue-vk-color;
+                border-color: v.$white-color;
+                transition: .1s linear;
+            }
+        }
+
+        .main__sending-logs-form-file-input {
+            position: absolute;
+            width: 1px;
+            opacity: 0.001%;
+        }
+    }
+
+    &-attached-files-comp {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: calc(v.$primary-margin-top-bottom / 3);
+
+        .main__sending-logs-form-attached-files-clearing-cross {
+            width: 1.3em;
+            margin-left: calc(v.$primary-margin-left-right / 3);
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-button {
+        position: relative;
+        right: 3px;
+    }
+}

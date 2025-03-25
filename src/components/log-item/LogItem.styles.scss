@@ -1,0 +1,36 @@
+@use '../../styles/_variables.scss' as v;
+
+.main__log-viewer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+    margin: calc(v.$primary-margin-top-bottom / 3) 0;
+
+    text-align: center;
+
+    padding-bottom: calc(v.$primary-margin-top-bottom / 5);
+
+    &:not(:last-child) {
+        border-bottom: calc(v.$primary-border-size / 2) v.$primary-grey-color solid;
+    }
+
+    &-filename {
+        margin-right: auto;
+    }
+
+    &-file-icon {
+        width: 20px;
+    }
+
+    &-log-date {
+        margin: 0 20px;
+    }
+
+    &-log-message {
+        text-align: center;
+        width: 70%;
+    }
+}

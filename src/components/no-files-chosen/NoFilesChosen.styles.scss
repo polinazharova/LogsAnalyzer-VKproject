@@ -1,0 +1,23 @@
+@use '../../styles/_variables.scss' as v;
+
+.main__no-files-chosen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 153px;
+
+    margin: calc(v.$primary-margin-top-bottom * 3) auto;
+
+    &-text {
+        text-align: center;
+    }
+
+    &-icon {
+        width: 70px;
+        
+        margin: calc(v.$primary-margin-top-bottom / 3) auto 0;
+
+    }
+}

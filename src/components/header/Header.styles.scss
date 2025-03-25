@@ -1,0 +1,50 @@
+@use '../../styles/_variables.scss' as v;
+
+#header {
+    margin: calc(v.$primary-margin-top-bottom / 1.5) v.$primary-margin-left-right 0;
+    padding: v.$primary-padding;
+
+    .header__comp {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .header__text-logo-comp {
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            
+            &:hover {
+                cursor: pointer;
+            }
+
+            .header__logo {
+                margin: 0 10px;
+                width: 3.5rem;
+            }
+        }
+
+        .header__title {
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .divider {
+        margin: v.$primary-margin-top-bottom auto;
+        height: 0.5px;
+        width: 75%;
+        background-color: v.$primary-grey-color;
+    }
+}
+
+@media (max-width: 660px) {
+    .header__comp {
+        flex-direction: column;
+    }
+  }
+
