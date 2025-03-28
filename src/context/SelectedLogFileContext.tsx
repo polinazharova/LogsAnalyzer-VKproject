@@ -7,7 +7,7 @@ interface SelectedFileContextType {
 }
 
 const SelectedFileContext = createContext<SelectedFileContextType>({
-    selectedFile: "Select a file",
+    selectedFile: 'Select a logs file',
     setSelectedFile: () : void => {},
 });
 
@@ -18,7 +18,7 @@ interface SelectedFileProviderProps {
 
 const SelectedFileProvider : React.FC<SelectedFileProviderProps> = ({children}) => {
 
-    const [selectedFile, setSelectedFile] = useState<string>("Select a file");
+    const [selectedFile, setSelectedFile] = useState<string>('Select a logs file');
 
     return (
         <SelectedFileContext.Provider value={{selectedFile, setSelectedFile}}>{children}</SelectedFileContext.Provider>

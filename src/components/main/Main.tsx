@@ -4,6 +4,7 @@ import './Main.styles.scss'
 import { LogFilesProvider } from "../../context/LogFilesContext";
 import { SelectedLogsTypeProvider } from "../../context/SelectedLogsTypeContext";
 import { SelectedFileProvider } from "../../context/SelectedLogFileContext";
+import { LogsMatchesProvider } from "../../context/LogsMathesContext";
 import LogsViewer from "../logs-viewer/LogsViewer";
 
 const Main: React.FC = () => {
@@ -14,7 +15,9 @@ const Main: React.FC = () => {
                 <SendingLogsForm />
                 <SelectedLogsTypeProvider>
                     <SelectedFileProvider>
-                        <LogsViewer />
+                        <LogsMatchesProvider>
+                            <LogsViewer />
+                        </LogsMatchesProvider>
                     </SelectedFileProvider>
                 </SelectedLogsTypeProvider>
             </LogFilesProvider>
