@@ -1,5 +1,5 @@
 import './LogItem.styles.scss'
-import fileIcon from '../../assets/file-icon-black.png'
+import fileIcon from '../../../../assets/file-icon-black.png'
 
 interface LogItemProps {
     fileName: string;

@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
 import './LogFileSelector.styles.scss'
-import useLogFileSelectorHandlers from '../../../hooks/useLogFileSelectorHandlers';
-import { SelectedFileContext } from '../../../context/SelectedLogFileContext';
-import { LogFilesContext } from '../../../context/LogFilesContext';
+import useLogFileSelectorHandlers from '../../../features/logs-viewer/hooks/useLogFileSelectorHandlers';
+import { SelectedFileContext } from '../../../features/logs-viewer/context/SelectedLogFileContext';
+import { LogFilesContext } from '../../../features/logs-viewer/context/LogFilesContext';
 
 interface LogFileSelectorProps {
     filenames: string[];

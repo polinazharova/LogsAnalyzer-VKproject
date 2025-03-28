@@ -1,5 +1,5 @@
 import './NoFilesChosen.styles.scss'
-import addFileIcon from '../../assets/add-file-icon.png'
+import addFileIcon from '../../../../assets/add-file-icon.png'
 
 const NoFilesChosen : React.FC = ()  => {
     return (

@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { LogFilesContext } from "../../../../context/LogFilesContext";
+import { LogFilesContext } from "../../logs-viewer/context/LogFilesContext";
 
 const useSendingLogsFormHandlers = (setFilesAttached : React.Dispatch<React.SetStateAction<number | string>>,
     formRef : React.RefObject<HTMLFormElement>) => {
-    
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) : void => {
         const files = event.target.files;
 
@@ -45,7 +44,6 @@ const useSendingLogsFormHandlers = (setFilesAttached : React.Dispatch<React.SetS
             button.disabled = true;
         }
     }
-   
 
     return {handleFileChange, handleFormSubmit, handleClickClearingAttachedFiles};
 }

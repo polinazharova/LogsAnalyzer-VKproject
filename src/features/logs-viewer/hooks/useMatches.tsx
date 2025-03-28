@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import { logsRegExp as regExp } from "../utils/logsRegExp";
+import { logsRegExp as regExp } from "../const/logsRegExp";
 
 type UseMatchesParams = {
     logs: {[key : string] : string[]}
@@ -17,7 +17,7 @@ const useMatches = ({logs, fileName, selectedLogsType, setFirstShownIndex} : Use
           const matches: { [key: string]: string[][] } = {};
   
           matches[fileName] = [];
-          console.log(logs, fileName);
+          
           logs[fileName].forEach((logBody : string) => {
             const match = logBody.match(regExp);
   

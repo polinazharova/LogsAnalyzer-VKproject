@@ -1,4 +1,4 @@
-@use '../../styles/_variables.scss' as v;
+@use '../../../../styles/_variables.scss' as v;
 
 .main__no-files-chosen {
     display: flex;
@@ -18,6 +18,5 @@
         width: 70px;
         
         margin: calc(v.$primary-margin-top-bottom / 3) auto 0;
-
     }
 }

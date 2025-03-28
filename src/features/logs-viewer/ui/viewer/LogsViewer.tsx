@@ -1,12 +1,13 @@
 import './LogsViewer.styles.scss'
 import { useContext, useMemo, useState } from 'react'
 import { LogFilesContext } from '../../context/LogFilesContext'
-import LogsTypeSelector from '../selector/logs-type-selector/LogsTypeSelector'
+import LogsTypeSelector from '../../../../components/selector/logs-type-selector/LogsTypeSelector'
 import useFileReader from '../../hooks/useFileReader'
-import LogFileSelector from '../selector/log-file-selector/LogFileSelector'
+import LogFileSelector from '../../../../components/selector/log-file-selector/LogFileSelector'
 import NoFilesChosen from '../no-files-chosen/NoFilesChosen'
 import LogSwitcher from '../log-switcher/LogSwitcher'
 import LogItems from '../log-items/LogItems'
+import useFilenames from '../../hooks/useFilenames'
 
 const LogsViewer: React.FC = () => {
     const {logFiles} = useContext(LogFilesContext);
@@ -15,11 +16,7 @@ const LogsViewer: React.FC = () => {
     const [logs, setLogs] = useState<{ [key: string]: string[] } | null>(null);
     const [firstShownIndex, setFirstShownIndex] = useState<number>(0);
 
-    const filenames : string[] = useMemo(() => {
-        return logs ? Object.keys(logs) : [];
-    }, [logs])
-
-    console.log(logFiles);
+    const filenames : string[] = useFilenames({logs});
 
     useFileReader({logFiles, setIsReading, setLogs});
     
