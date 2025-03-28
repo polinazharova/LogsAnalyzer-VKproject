@@ -6,7 +6,6 @@ import { SelectedFileContext } from '../../context/SelectedLogFileContext';
 import useMatches from '../../hooks/useMatches';
 import { LogsMatchesContext } from '../../context/LogsMathesContext';
 
-
 interface LogItemsProps {
     logs: {[key: string] : string[]};
     firstShownIndex: number;

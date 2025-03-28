@@ -1,15 +1,21 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { SelectedLogsTypeContext } from '../../../context/SelectedLogsTypeContext';
 import './LogsTypeSelector.styles.scss'
 import useLogsTypeSelectorHandlers from '../../../hooks/useLogsTypeSelectorHandlers';
+import { LogFilesContext } from '../../../context/LogFilesContext';
 
 
 const LogsTypeSelector: React.FC = () => {
 
+    const {logFiles} = useContext(LogFilesContext);
     const {selectedLogsType, setSelectedLogsType} = useContext(SelectedLogsTypeContext);
     const [isSelectorItemsHidden, setIsSelectorItemsHidden] = useState<boolean>(true);
 
-   useLogsTypeSelectorHandlers(setIsSelectorItemsHidden, setSelectedLogsType);
+    useLogsTypeSelectorHandlers(setIsSelectorItemsHidden, setSelectedLogsType);
+
+    useEffect(() => {
+        setSelectedLogsType('ALL');
+    }, [logFiles]);
 
     return(
         <div className="main__logs-type-selector">

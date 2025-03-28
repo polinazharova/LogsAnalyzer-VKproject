@@ -1,11 +1,12 @@
-import RunningString from "../running-string/RunningString";
-import SendingLogsForm from "../../features/sending-logs-form/ui/SendingLogsForm";
 import './Main.styles.scss'
-import { LogFilesProvider } from "../../context/LogFilesContext";
-import { SelectedLogsTypeProvider } from "../../context/SelectedLogsTypeContext";
-import { SelectedFileProvider } from "../../context/SelectedLogFileContext";
-import { LogsMatchesProvider } from "../../context/LogsMathesContext";
-import LogsViewer from "../logs-viewer/LogsViewer";
+import RunningString from "../components/running-string/RunningString";
+import SendingLogsForm from "../features/sending-logs-form/ui/SendingLogsForm";
+import LogsViewer from "../components/logs-viewer/LogsViewer";
+import { LogFilesProvider } from "../context/LogFilesContext";
+import { SelectedLogsTypeProvider } from "../context/SelectedLogsTypeContext";
+import { SelectedFileProvider } from "../context/SelectedLogFileContext";
+import { LogsMatchesProvider } from "../context/LogsMathesContext";
+
 
 const Main: React.FC = () => {
     return(

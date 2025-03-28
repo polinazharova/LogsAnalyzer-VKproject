@@ -19,6 +19,8 @@ const LogsViewer: React.FC = () => {
         return logs ? Object.keys(logs) : [];
     }, [logs])
 
+    console.log(logFiles);
+
     useFileReader({logFiles, setIsReading, setLogs});
     
     switch(isReading) {
