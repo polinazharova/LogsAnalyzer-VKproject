@@ -1,7 +1,7 @@
 import './Main.styles.scss'
 import RunningString from "../components/running-string/RunningString";
 import SendingLogsForm from "../features/sending-logs-form/ui/form/Form";
-import LogsViewer from "../components/logs-viewer/LogsViewer";
+import LogsViewer from '../features/logs-viewer';
 import { LogFilesProvider } from "../features/logs-viewer/context/LogFilesContext";
 import { SelectedLogsTypeProvider } from "../features/logs-viewer/context/SelectedLogsTypeContext";
 import { SelectedFileProvider } from "../features/logs-viewer/context/SelectedLogFileContext";

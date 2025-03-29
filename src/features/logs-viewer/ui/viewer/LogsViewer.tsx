@@ -1,5 +1,5 @@
 import './LogsViewer.styles.scss'
-import { useContext, useMemo, useState } from 'react'
+import { useContext, useState } from 'react'
 import { LogFilesContext } from '../../context/LogFilesContext'
 import LogsTypeSelector from '../../../../components/selector/logs-type-selector/LogsTypeSelector'
 import useFileReader from '../../hooks/useFileReader'
