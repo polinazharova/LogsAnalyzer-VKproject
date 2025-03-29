@@ -2,11 +2,10 @@ import VKLogo from '../../assets/vk-logo.png'
 import './Header.styles.scss'
 
 const Header: React.FC = () => {
-
     return(
         <header id='header'>
             <div className='header__comp'>
-                <div className='header__text-logo-comp' onClick={() => {location.href = '/'}}>
+                <div className='header__text-logo-comp' onClick={() => {location.href = '/LogsAnalyzer-VKproject/'}}>
                     <p>Study project for</p>
                     <img className='header__logo' src={VKLogo} alt="VK Logo" />
                     <p>Education</p>
