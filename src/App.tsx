@@ -1,13 +1,14 @@
-import Header from './layouts/header/Header'
-import Main from './components/main/Main'
-import Footer from './layouts/footer/Footer'
+import MainPage from "./pages/main-page/MainPage" 
+import NotFoundPage from "./pages/not-found/NotFoundPage"
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return(
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/LogsAnalyzer-VKproject/" element={<MainPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </>
   )
 }

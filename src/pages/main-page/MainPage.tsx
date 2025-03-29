@@ -1,15 +1,15 @@
-import RunningString from "../running-string/RunningString";
+import MainLayout from "../../layouts/MainLayout";
+import RunningString from "../../components/running-string/RunningString";
 import SendingLogsForm from "../../features/sending-logs-form/ui/form/Form";
-import './Main.styles.scss'
 import { LogFilesProvider } from "../../features/logs-viewer/context/LogFilesContext";
 import { SelectedLogsTypeProvider } from "../../features/logs-viewer/context/SelectedLogsTypeContext";
 import { SelectedFileProvider } from "../../features/logs-viewer/context/SelectedLogFileContext";
 import { LogsMatchesProvider } from "../../features/logs-viewer/context/LogsMathesContext";
 import LogsViewer from "../../features/logs-viewer/ui/viewer/LogsViewer";
 
-const Main: React.FC = () => {
+const MainPage: React.FC = () => {
     return(
-        <main id="main">
+        <MainLayout>
             <RunningString content="This is a project for VK Education" />
             <LogFilesProvider>
                 <SendingLogsForm />
@@ -21,8 +21,8 @@ const Main: React.FC = () => {
                     </SelectedFileProvider>
                 </SelectedLogsTypeProvider>
             </LogFilesProvider>
-        </main>
+        </MainLayout>
     )
 }
 
-export default Main;
+export default MainPage;

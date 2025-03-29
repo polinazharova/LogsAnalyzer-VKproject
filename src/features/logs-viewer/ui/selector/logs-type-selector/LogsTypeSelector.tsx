@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
-import { SelectedLogsTypeContext } from '../../../features/logs-viewer/context/SelectedLogsTypeContext';
+import { SelectedLogsTypeContext } from '../../../context/SelectedLogsTypeContext'
 import './LogsTypeSelector.styles.scss'
-import useLogsTypeSelectorHandlers from '../../../features/logs-viewer/hooks/useLogsTypeSelectorHandlers';
-import { LogFilesContext } from '../../../features/logs-viewer/context/LogFilesContext';
+import useLogsTypeSelectorHandlers from '../../../hooks/useLogsTypeSelectorHandlers';
+import { LogFilesContext } from '../../../context/LogFilesContext';
 
 
 const LogsTypeSelector: React.FC = () => {
