@@ -28,7 +28,7 @@ const LogItems: React.FC<LogItemsProps> = ({
 
   const { logsMatches, setLogsMatches } = useContext(LogsMatchesContext);
 
-  const matchesTmp = useMatches({
+  const matchesTmp :  { [key: string]: string[][] } = useMatches({
     logs,
     fileName,
     selectedLogsType,
@@ -44,7 +44,7 @@ const LogItems: React.FC<LogItemsProps> = ({
         {logsMatches[fileName].length ? (
           logsMatches[fileName]
             .slice(firstShownIndex, firstShownIndex + 10)
-            .map((log: string, index: number) => (
+            .map((log: string[], index: number) => (
               <LogItem
                 key={fileName + index}
                 fileName={fileName}

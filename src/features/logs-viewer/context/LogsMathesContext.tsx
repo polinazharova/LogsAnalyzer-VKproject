@@ -1,9 +1,9 @@
 import React, { createContext, useState } from "react";
 
 interface LogsMatchesContextType {
-  logsMatches: { [key: string]: string[] };
+  logsMatches: { [key: string]: string[][] };
   setLogsMatches: React.Dispatch<
-    React.SetStateAction<{ [key: string]: string[] }>
+    React.SetStateAction<{ [key: string]: string[][] }>
   >;
 }
 const LogsMatchesContext = createContext<LogsMatchesContextType>({
@@ -17,7 +17,7 @@ interface LogsMatchesProviderProps {
 const LogsMatchesProvider: React.FC<LogsMatchesProviderProps> = ({
   children,
 }) => {
-  const [logsMatches, setLogsMatches] = useState<{ [key: string]: string[] }>(
+  const [logsMatches, setLogsMatches] = useState<{ [key: string]: string[][] }>(
     {},
   );
 
