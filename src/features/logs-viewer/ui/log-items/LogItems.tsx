@@ -28,7 +28,7 @@ const LogItems: React.FC<LogItemsProps> = ({
 
   const { logsMatches, setLogsMatches } = useContext(LogsMatchesContext);
 
-  const matchesTmp :  { [key: string]: string[][] } = useMatches({
+  const matchesTmp: { [key: string]: string[][] } = useMatches({
     logs,
     fileName,
     selectedLogsType,
