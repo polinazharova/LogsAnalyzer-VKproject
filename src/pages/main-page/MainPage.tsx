@@ -8,21 +8,21 @@ import { LogsMatchesProvider } from "../../features/logs-viewer/context/LogsMath
 import LogsViewer from "../../features/logs-viewer/ui/viewer/LogsViewer";
 
 const MainPage: React.FC = () => {
-    return(
-        <MainLayout>
-            <RunningString content="This is a project for VK Education" />
-            <LogFilesProvider>
-                <SendingLogsForm />
-                <SelectedLogsTypeProvider>
-                    <SelectedFileProvider>
-                        <LogsMatchesProvider>
-                            <LogsViewer />
-                        </LogsMatchesProvider>
-                    </SelectedFileProvider>
-                </SelectedLogsTypeProvider>
-            </LogFilesProvider>
-        </MainLayout>
-    )
-}
+  return (
+    <MainLayout>
+      <RunningString content="This is a project for VK Education" />
+      <LogFilesProvider>
+        <SendingLogsForm />
+        <SelectedLogsTypeProvider>
+          <SelectedFileProvider>
+            <LogsMatchesProvider>
+              <LogsViewer />
+            </LogsMatchesProvider>
+          </SelectedFileProvider>
+        </SelectedLogsTypeProvider>
+      </LogFilesProvider>
+    </MainLayout>
+  );
+};
 
 export default MainPage;
