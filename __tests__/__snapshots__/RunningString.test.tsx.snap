@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Running string component matches snapshot 1`] = `
+<div
+  class="main__running-string"
+>
+  <div
+    class="main__running-string-content"
+  >
+    <img
+      alt="Running string background image"
+      class="main__running-string-pattern"
+      src=""
+    />
+    <span
+      class="main__running-string-text"
+    >
+      RS
+    </span>
+    <img
+      alt="Running string background image"
+      class="main__running-string-pattern"
+      src=""
+    />
+  </div>
+  <div
+    class="main__running-string-content"
+  >
+    <img
+      alt="Running string background image"
+      class="main__running-string-pattern"
+      src=""
+    />
+    <span
+      class="main__running-string-text"
+    >
+      RS
+    </span>
+    <img
+      alt="Running string background image"
+      class="main__running-string-pattern"
+      src=""
+    />
+  </div>
+</div>
+`;

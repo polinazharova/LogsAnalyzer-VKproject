@@ -19,6 +19,8 @@ const LogItem: React.FC<LogItemProps> = ({ fileName, date, message }) => {
       minute: "numeric",
       second: "numeric",
     }).format(parsedDate);
+  } else {
+    date = "NaN";
   }
 
   return (

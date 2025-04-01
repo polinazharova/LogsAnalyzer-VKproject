@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogItems component matches snapshot 1`] = `
+<div
+  class="main__log-viewer-items"
+>
+  <div
+    class="main__log-viewer-item"
+  >
+    <img
+      alt="file icon from flaticon.com"
+      class="main__log-viewer-item-file-icon"
+      src=""
+    />
+    <span
+      class="main__log-viewer-item-filename"
+    >
+      demo.log
+    </span>
+    <span
+      class="main__log-viewer-item-log-date"
+    >
+      01.01.1980, 00:00:00
+    </span>
+    <span
+      class="main__log-viewer-item-log-message"
+    >
+      Test1
+    </span>
+  </div>
+  <div
+    class="main__log-viewer-item"
+  >
+    <img
+      alt="file icon from flaticon.com"
+      class="main__log-viewer-item-file-icon"
+      src=""
+    />
+    <span
+      class="main__log-viewer-item-filename"
+    >
+      demo.log
+    </span>
+    <span
+      class="main__log-viewer-item-log-date"
+    >
+      01.02.1980, 00:00:00
+    </span>
+    <span
+      class="main__log-viewer-item-log-message"
+    >
+      Test2
+    </span>
+  </div>
+  <div
+    class="main__log-viewer-item"
+  >
+    <img
+      alt="file icon from flaticon.com"
+      class="main__log-viewer-item-file-icon"
+      src=""
+    />
+    <span
+      class="main__log-viewer-item-filename"
+    >
+      demo.log
+    </span>
+    <span
+      class="main__log-viewer-item-log-date"
+    >
+      01.03.1980, 00:00:00
+    </span>
+    <span
+      class="main__log-viewer-item-log-message"
+    >
+      Test3
+    </span>
+  </div>
+  <div
+    class="main__log-viewer-item"
+  >
+    <img
+      alt="file icon from flaticon.com"
+      class="main__log-viewer-item-file-icon"
+      src=""
+    />
+    <span
+      class="main__log-viewer-item-filename"
+    >
+      demo.log
+    </span>
+    <span
+      class="main__log-viewer-item-log-date"
+    >
+      01.04.1980, 00:00:00
+    </span>
+    <span
+      class="main__log-viewer-item-log-message"
+    >
+      Test4
+    </span>
+  </div>
+  <div
+    class="main__log-viewer-item"
+  >
+    <img
+      alt="file icon from flaticon.com"
+      class="main__log-viewer-item-file-icon"
+      src=""
+    />
+    <span
+      class="main__log-viewer-item-filename"
+    >
+      demo.log
+    </span>
+    <span
+      class="main__log-viewer-item-log-date"
+    >
+      01.05.1980, 00:00:00
+    </span>
+    <span
+      class="main__log-viewer-item-log-message"
+    >
+      Test5
+    </span>
+  </div>
+</div>
+`;

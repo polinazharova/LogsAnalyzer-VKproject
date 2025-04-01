@@ -2,10 +2,10 @@ import RunningStringPattern from "../../assets/running_string_pattern.svg";
 import "./RunningString.styles.scss";
 
 interface RunningStringProps {
-  content: string;
+  children: React.ReactNode;
 }
 
-const RunningString: React.FC<RunningStringProps> = ({ content }) => {
+const RunningString: React.FC<RunningStringProps> = ({ children }) => {
   return (
     <div className="main__running-string">
       <div className="main__running-string-content">
@@ -14,7 +14,7 @@ const RunningString: React.FC<RunningStringProps> = ({ content }) => {
           src={RunningStringPattern}
           alt="Running string background image"
         />
-        <span className="main__running-string-text">{content}</span>
+        <span className="main__running-string-text">{children}</span>
         <img
           className="main__running-string-pattern"
           src={RunningStringPattern}
@@ -27,7 +27,7 @@ const RunningString: React.FC<RunningStringProps> = ({ content }) => {
           src={RunningStringPattern}
           alt="Running string background image"
         />
-        <span className="main__running-string-text">{content}</span>
+        <span className="main__running-string-text">{children}</span>
         <img
           className="main__running-string-pattern"
           src={RunningStringPattern}

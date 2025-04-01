@@ -19,26 +19,27 @@ const useMatches = ({
   }, [fileName, selectedLogsType]);
 
   const matches: { [key: string]: string[][] } = useMemo(() => {
-    const matches: { [key: string]: string[][] } = {};
+    const matchesTmp: { [key: string]: string[][] } = {};
 
-    matches[fileName] = [];
+    matchesTmp[fileName] = [];
 
     logs[fileName].forEach((logBody: string) => {
       const match = logBody.match(regExp);
 
       if (match) {
+        const [, date, logType, message] = match;
         if (
-          match[2] !== selectedLogsType &&
+          logType !== selectedLogsType &&
           selectedLogsType !== "ALL" &&
           selectedLogsType !== "Select a logs type"
         ) {
           return;
         }
-        matches[fileName].push([match[1], match[3]]);
+        matchesTmp[fileName].push([date, message]);
       }
     });
 
-    return matches;
+    return matchesTmp;
   }, [selectedLogsType, fileName]);
 
   return matches;

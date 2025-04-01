@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`File input component matches snapshot 1`] = `
+<div
+  class="test-file-input-comp"
+>
+  <label
+    class="test-file-input-label"
+    for="test"
+  >
+    Input
+  </label>
+  <input
+    accept=".log"
+    class="test-file-input"
+    id="test"
+    multiple=""
+    name="test"
+    type="file"
+  />
+</div>
+`;

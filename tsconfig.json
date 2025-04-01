@@ -1,7 +1,12 @@
 {
-  "files": [],
+  "files": ["src/global.d.ts"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
+  },
+  "types": ["vite/client", "node"]
 }

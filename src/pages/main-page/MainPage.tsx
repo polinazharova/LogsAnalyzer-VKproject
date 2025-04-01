@@ -10,7 +10,7 @@ import LogsViewer from "../../features/logs-viewer/ui/viewer/LogsViewer";
 const MainPage: React.FC = () => {
   return (
     <MainLayout>
-      <RunningString content="This is a project for VK Education" />
+      <RunningString>This is a project for VK Education</RunningString>
       <LogFilesProvider>
         <SendingLogsForm />
         <SelectedLogsTypeProvider>

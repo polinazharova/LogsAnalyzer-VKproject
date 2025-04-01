@@ -1,12 +1,14 @@
 import { ChangeEventHandler } from "react";
 
 interface FileInputProps {
+  children: React.ReactNode;
   formClass: string;
   inputId: string;
   handleFileChange: ChangeEventHandler<HTMLInputElement>;
 }
 
 const FileInput: React.FC<FileInputProps> = ({
+  children,
   formClass,
   inputId,
   handleFileChange,
@@ -14,7 +16,7 @@ const FileInput: React.FC<FileInputProps> = ({
   return (
     <div className={`${formClass}-file-input-comp`}>
       <label className={`${formClass}-file-input-label`} htmlFor={inputId}>
-        Choose a .log file
+        {children}
       </label>
       <input
         className={`${formClass}-file-input`}

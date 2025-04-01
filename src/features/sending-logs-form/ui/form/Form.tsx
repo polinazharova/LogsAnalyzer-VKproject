@@ -27,7 +27,9 @@ const Form: React.FC = () => {
         formClass={formClass}
         inputId="log-file-input"
         handleFileChange={handleFileChange}
-      />
+      >
+        Upload a .log file
+      </FileInput>
       <AttachedFiles
         formClass={formClass}
         filesAttached={filesAttached}

@@ -53,7 +53,9 @@ const LogItems: React.FC<LogItemsProps> = ({
               />
             ))
         ) : logs[fileName].length ? (
-          <div key={`${fileName}-wrong`}>Wrong format of logs!</div>
+          <div key={`${fileName}-wrong`}>
+            Wrong format of logs or logs with selected type don&apos;t exist!
+          </div>
         ) : (
           <div className="main__log-viewer-item" key={`${fileName}-empty`}>
             {fileName} is empty

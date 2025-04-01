@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogItem component matches snapshot 1`] = `
+<div
+  class="main__log-viewer-item"
+>
+  <img
+    alt="file icon from flaticon.com"
+    class="main__log-viewer-item-file-icon"
+    src=""
+  />
+  <span
+    class="main__log-viewer-item-filename"
+  >
+    test.log
+  </span>
+  <span
+    class="main__log-viewer-item-log-date"
+  >
+    NaN
+  </span>
+  <span
+    class="main__log-viewer-item-log-message"
+  >
+    test
+  </span>
+</div>
+`;
