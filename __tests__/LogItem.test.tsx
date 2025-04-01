@@ -35,7 +35,7 @@ describe("LogItem component", () => {
   });
 
   test("applies correct data", () => {
-    const date : string = "2025-02-12T19:36:10+03:00";
+    const date: string = "2025-02-12T19:36:10+03:00";
     const expectedDate = new Intl.DateTimeFormat("ru-RU", {
       day: "numeric",
       month: "numeric",
