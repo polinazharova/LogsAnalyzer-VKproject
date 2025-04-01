@@ -35,12 +35,20 @@ describe("LogItem component", () => {
   });
 
   test("applies correct data", () => {
-    const date = "2025-02-12T19:36:10+03:00";
+    const date : string = "2025-02-12T19:36:10+03:00";
+    const expectedDate = new Intl.DateTimeFormat("ru-RU", {
+      day: "numeric",
+      month: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    }).format(new Date(date));
     render(
       <LogItem fileName={props.fileName} date={date} message={props.message} />,
     );
     expect(screen.getByText(props.fileName)).toBeInTheDocument();
-    expect(screen.getByText("12.02.2025, 19:36:10")).toBeInTheDocument();
+    expect(screen.getByText(expectedDate)).toBeInTheDocument();
     expect(screen.getByText(props.message)).toBeInTheDocument();
   });
 
